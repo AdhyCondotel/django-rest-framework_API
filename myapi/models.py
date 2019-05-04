@@ -7,6 +7,7 @@ from django.contrib.auth.models import AbstractUser
 
 class CustomUser(AbstractUser):
 	phone = models.CharField(blank=True, max_length=15)
+	#phone = models.CharField(validators =[phone_regex], blank=True, max_length=15)
 	role = models.CharField(default='user', max_length=50, blank=True)
 	
 	def __str__(self):

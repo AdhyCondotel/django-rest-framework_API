@@ -10,7 +10,7 @@ from .views import (
     AddressView, 
     TenantView, 
     UserCreate, 
-    CustomObtainJSONWebToken
+    CustomObtainJSONWebToken,
 )
 
 router = routers.DefaultRouter()
